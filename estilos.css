@@ -1,0 +1,54 @@
+html, body, div, span, object,section,article,aside iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	margin: 0;	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block;}body {	line-height: 1;}ol, ul {	list-style: none;}blockquote, q {	quotes: none;}blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}table {	border-collapse: collapse;	border-spacing: 0;}
+
+@font-face {
+    font-family: 'Candara';
+    src: url('../../fonts/candara/candara.eot');
+    src: url('../../fonts/candara/candara.eot') format('embedded-opentype'),
+         url('../../fonts/candara/candara.woff') format('woff'),
+         url('../../fonts/candara/candara.ttf') format('truetype'),
+         url('../../fonts/candara/candara.svg#CandaraRegular') format('svg');
+}
+
+html,body{
+	font-size: 16px;
+	font-family: Candara;
+	height: 100%;
+	width: 100%;
+}
+
+section .title {
+	margin: 10px;
+	text-transform: capitalize;
+}
+	section .title span{
+		background: rgba(243,99,9,0.07);
+		border-radius: 5px;
+		color: rgba(243,99,9,1);
+		padding: 2px 4px;
+		width: auto;
+	}
+
+section .shoe{
+	background-position: -20%;
+	background-size: cover;
+	border: 3px solid #f49b63;
+	border-radius: 10px;
+	cursor: pointer;
+	display: inline-block;
+	height: 110px;
+	margin: 6px;
+	opacity: 0.8;
+	padding-top: 60px;
+	width: 280px;
+}
+
+section .shoe:hover{
+	border: 3px solid #f26c19;
+	opacity: 1;
+}
+
+	section .shoe span{
+		background: rgba(255,255,255,0.8);
+		padding: 3px;
+		text-align: center;
+	}

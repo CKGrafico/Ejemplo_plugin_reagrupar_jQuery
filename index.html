@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Haciendo el ejemplito</title>
+
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="jquery.OrderByClass.js"></script>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+
+	<script type="text/javascript">
+		// La primera vez cargamos sin ningun tipo de orden
+		// load en localhost no va!
+		$(document).on("ready",function(){
+			$("section").load("zapatos.html");
+		});
+
+		// Al apretar en un botón cambiamos las agrupaciones
+		$(document).on("click","header button",function(){
+			$("header button").attr("disabled",false);
+			$(this).attr("disabled",true);
+			var filtro  = $(this).attr("id");
+			$("section").orderbyclass(filtro,".shoe");
+		});
+
+	</script>
+</head>
+<body>
+	<header>
+		<button id="size">Ordenar por talla</button>
+		<button id="price">Ordenar por precio</button>
+		<button id="color">Ordenar por color</button>
+	</header>
+	<section>
+		sd
+	</section>
+</body>
+</html>
