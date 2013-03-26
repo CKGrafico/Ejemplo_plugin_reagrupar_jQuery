@@ -19,4 +19,4 @@ clicar genera de nuevo la consulta y nos los muestra como queremos.
 http://www.slid.us/9aX1
 
 ####Charla en youtube:
-..
+http://www.youtube.com/watch?v=8lll7V6mVR0&feature=youtu.be
